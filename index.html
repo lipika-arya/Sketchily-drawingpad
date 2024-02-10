@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Pad | Sketchify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Canvas element for drawing -->
+<canvas id="drawingCanvas" width="700" height="700"></canvas>
+   
+
+    <!-- Controls for drawing and erasing -->
+    <section class="tools-board">
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="icons/rectangle.svg" alt="">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="icons/circle.svg" alt="">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="icons/triangle.svg" alt="">
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        
+         <div class="row">
+          <label class="title">Options</label>
+          
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="icons/brush.svg" alt="">
+              <span>Brush</span>
+            </li>
+             <!-- Pencil size buttons -->
+            <div class="size-btn-container">
+                <div class="size-btn" id="size1">1</div>
+                <div class="size-btn" id="size3">3</div>
+                <div class="size-btn" id="size5">5</div>
+                <div class="size-btn" id="size7">7</div>
+                <div class="size-btn" id="size10">10</div>
+            </div>
+            <!-- Pencil color buttons -->
+            <div class="color-btn-container">
+                <div class="color-btn" id="pencilColorBlack" style="background-color: #000;"></div>
+                <div class="color-btn" id="pencilColorRed" style="background-color: #FF0000;"></div>
+                <div class="color-btn" id="pencilColorBlue" style="background-color: #0000FF;"></div>
+                <div class="color-btn" id="pencilColorYellow" style="background-color: #FFFF00;"></div>
+                <div class="color-btn" id="pencilColorPink" style="background-color: #FFC0CB;"></div>
+                <div class="color-btn" id="pencilColorBrown" style="background-color: #A52A2A;"></div>
+                <div class="color-btn" id="pencilColorGreen" style="background-color: #008000;"></div>
+                <div class="color-btn" id="pencilColorOrange" style="background-color: #FFA500;"></div>
+                <div class="color-btn" id="pencilColorPurple" style="background-color: #800080;"></div>
+            </div>
+                 <!-- Eraser button with eraser icon -->
+            <li class="option tool" id="eraser">
+              <img src="icons/eraser.svg" alt="">
+              <span>Eraser</span>
+            </li>
+       
+        
+            <!-- Eraser size buttons -->
+            <div class="size-btn-container">
+                <div class="size-btn" id="eraserSize10">10</div>
+                <div class="size-btn" id="eraserSize20">20</div>
+                <div class="size-btn" id="eraserSize30">30</div>
+                <div class="size-btn" id="eraserSize50">50</div>
+                <div class="size-btn" id="eraserSize100">100</div>
+            </div>
+        </div>
+          
+           
+      
+
+        
+
+        
+        <!-- Clear button to clear the drawing -->
+        <div class= "row">
+        <button class="clearBtn">CLEAR</button>
+        <button class="save-img">Save As Image</button>
+        </div>
+        </section>
+      
+    </div>
+</body>
+</html>
